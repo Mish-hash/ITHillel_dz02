@@ -85,7 +85,7 @@ a = 1, b = 2, c = 3, d = 3
 const a = 1, b = 2, c = 3, d = 3;
 
 const resultOr =  (a === c || c === b) || (b === c || c === c) || (c === c || c === d);
-const resultAnd = (a === c && c === b) && (b === c && c === c) || (c === c && c === d);
+const resultAnd = (a < c && c > b) && (b < c && c === c) && (c === c && c === d);
 
 console.log(resultOr, resultAnd);
 

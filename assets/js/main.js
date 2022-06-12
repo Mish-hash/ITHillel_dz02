@@ -9,6 +9,7 @@ const resultNumber = `Изначальное число \u2014 ${number} \nДв�
 
 console.log(resultNumber);
 
+
 /* Используя prompt введите число как константу, затем выведите в консоль результаты операций + - * / на 2 над этим числом */
 
 const promptInput = prompt('Введите число');
@@ -28,6 +29,7 @@ const promptNumberDivide2Result = `\n${promptNumber} / ${staticNumber} = ${promp
 
 console.log(promptNumberPlus2Result, promptNumberMinus2Result, promptNumberMultiply2Result, promptNumberDivide2Result);
 
+
 /* определити длинну строки введенной при помощи prompt и выведите длинну в консоль */
 
 const promptInputLenght = promptInput.length;
@@ -36,6 +38,7 @@ const promptInputLenghtResult = `Длинна строки при вводе = $
 
 console.log(promptInputLenghtResult);
 
+
 /* Округлите число 0.51000002 до двух знаков после запятой и прибавте к нему 2, результат выведете в консоль */
 
 const floatNamber = 0.51000002;
@@ -43,4 +46,32 @@ const floatNamber = 0.51000002;
 let floatNamberTo2 = parseFloat(floatNamber.toFixed(2));
 
 console.log(floatNamberTo2 += staticNumber);
+
+
+/* ==== СТРОКИ ====
+
+дано:
+
+const str = 'the quick brown fox jumps over the lazy dogs back';
+
+const str_two = 'brown fox jumps'
+
+
+
+определите с какого символа строка str_two начинается в строке str
+
+
+
+преобразуте любую из этих строк к заглавным буквам, результат выведете в консоль */
+
+const str = 'the quick brown fox jumps over the lazy dogs back';
+
+const str_two = 'brown fox jumps';
+
+const strIndexResult = str.lastIndexOf(str_two);
+
+const resultIndexStr = `Вторая строка на чинается в строке str с ${strIndexResult} позиции`;
+const resultUpperCase = '\nВторая строка в верхнем регистре \u2014 ' + str_two.toUpperCase();
+
+console.log(resultIndexStr, resultUpperCase);
 

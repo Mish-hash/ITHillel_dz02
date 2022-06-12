@@ -28,4 +28,11 @@ const promptNumberDivide2Result = `\n${promptNumber} / ${staticNumber} = ${promp
 
 console.log(promptNumberPlus2Result, promptNumberMinus2Result, promptNumberMultiply2Result, promptNumberDivide2Result);
 
+/* определити длинну строки введенной при помощи prompt и выведите длинну в консоль */
+
+const promptInputLenght = promptInput.length;
+
+const promptInputLenghtResult = `Длинна строки при вводе = ${promptInputLenght}`;
+
+console.log(promptInputLenghtResult);
 

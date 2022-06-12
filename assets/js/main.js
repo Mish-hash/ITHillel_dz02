@@ -20,10 +20,10 @@ let promptNumberMinus2 = promptNumber;
 let promptNumberMultiply2 = promptNumber;
 let promptNumberDivide2 = promptNumber;
 
-const promptNumberPlus2Result = `${promptNumber} + ${staticNumber} = ${promptNumberPlus2 += 2}`;
-const promptNumberMinus2Result = `\n${promptNumber} - ${staticNumber} = ${promptNumberMinus2 -= 2}`;
-const promptNumberMultiply2Result = `\n${promptNumber} * ${staticNumber} = ${promptNumberMultiply2 *= 2}`;
-const promptNumberDivide2Result = `\n${promptNumber} / ${staticNumber} = ${promptNumberDivide2 /= 2}`;
+const promptNumberPlus2Result = `${promptNumber} + ${staticNumber} = ${promptNumberPlus2 += staticNumber}`;
+const promptNumberMinus2Result = `\n${promptNumber} - ${staticNumber} = ${promptNumberMinus2 -= staticNumber}`;
+const promptNumberMultiply2Result = `\n${promptNumber} * ${staticNumber} = ${promptNumberMultiply2 *= staticNumber}`;
+const promptNumberDivide2Result = `\n${promptNumber} / ${staticNumber} = ${promptNumberDivide2 /= staticNumber}`;
 
 
 console.log(promptNumberPlus2Result, promptNumberMinus2Result, promptNumberMultiply2Result, promptNumberDivide2Result);
@@ -35,4 +35,12 @@ const promptInputLenght = promptInput.length;
 const promptInputLenghtResult = `Длинна строки при вводе = ${promptInputLenght}`;
 
 console.log(promptInputLenghtResult);
+
+/* Округлите число 0.51000002 до двух знаков после запятой и прибавте к нему 2, результат выведете в консоль */
+
+const floatNamber = 0.51000002;
+
+let floatNamberTo2 = parseFloat(floatNamber.toFixed(2));
+
+console.log(floatNamberTo2 += staticNumber);
 
